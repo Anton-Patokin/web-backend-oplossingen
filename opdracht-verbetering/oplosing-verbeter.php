@@ -15,7 +15,7 @@
 	<h1>Foutjes verbeteren</h1>
 <?php 
 	echo "werkt </br>";
-	echo "werkt".$tekst." ".$tekst2." ".$tekst3." ".$zin." ".$beschrijving;
+	echo "werkt".$tekst." ".$tekst2." ".$tekst3." ".$zin." ".$beschrijving. " ";
 ?>
 </body>
 </html>
