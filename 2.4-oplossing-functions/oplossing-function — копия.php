@@ -12,7 +12,14 @@
         
         <section class="body">
         
+         
+         
+         
+         
+         
+         
           <?php
+echo "deel 1 <br>";
          function som_berekenen ($par1,$par2)
          {
             return $par1 + $par2;
@@ -47,9 +54,72 @@
           return $array;
         }
         $sting = lengte_en_upercase("opdracht is af");
-         echo "<p>lengte van de string is : ".$sting[0]." en de string in Hoofdletters :".$sting[1]." </p>"
-         ?>
+         echo "<p>lengte van de string is : ".$sting[0]." en de string in Hoofdletters :".$sting[1]." </p>";
 
+
+
+
+
+
+
+
+
+
+
+
+echo "deel 2 <br>";
+function drukArrayAf($par){
+ 
+ 
+ 
+ foreach ( $par as $key => $value)
+        {
+           $new_string_array[] = '['.$key.'] met waarde '.$value;
+        }
+ return $new_string_array;
+
+}
+$arrays_name = array("1","2","melk", "cola" => "zerop");
+$functie_array = drukArrayAf($arrays_name);
+
+
+
+
+
+
+$html_string = "<h1>paar worden over material</h1>";
+
+function controleer_h1_element ($string){
+ $opening_tag = "<h1>";
+ $sluitings_tag = "</h1>";
+ $low_string = strtolower($string);
+ 
+ if(strpos($low_string, $opening_tag) == 0 && strpos($low_string, $opening_tag) !== false ){
+  
+  if(strpos($low_string, $sluitings_tag) > strlen($opening_tag)){
+   
+   return "alles is in orde";
+  }else{
+   return "sluiting tag van h1 element vergeten";
+  }
+ }else{
+  return "geen opening tag";
+ }
+
+
+}
+
+
+
+
+
+
+
+         ?>
+         <?php foreach($functie_array as $key => $value):?>
+         <li><?php echo $value;?></li>
+         <?php endforeach?>
+<h1><?php echo controleer_h1_element($html_string); ?></h1>
         </section>
 
     </body>
