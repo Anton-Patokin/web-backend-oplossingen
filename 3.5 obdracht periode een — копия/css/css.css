@@ -1,0 +1,57 @@
+.todo-margin {
+    margin-top: -10px;
+    list-style-type: disc;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.delete {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.delete_done {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.error-massag {
+    background-color: red;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line-hover:hover {
+    text-decoration: line-through;
+    color: coral;
+}
+
+.active {
+    text-decoration: line-through;
+}
+
+.line-hover-none:hover {
+    text-decoration: none;
+    color: coral;
+}
+
+.footer{
+background-color: cornflowerblue;
+ color: white;
+ text-align: center;
+
+}
