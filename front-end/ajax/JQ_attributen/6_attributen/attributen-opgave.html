@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Labo 3 oefening 2</title>
+<style>
+	a {
+		display: block;
+	}
+
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script>
+	$(function(){
+     
+     
+      $("#hidexxx").click(function(){
+        $("[parental|='xxx']").hide();
+      });
+     
+     
+     $("#showtitle").click(function(){
+       $("[title]").each(function(index){
+       
+         $(this).html($(this).html()+"("+$(this).attr("title")+")");
+        //.attr("title")
+       })
+      
+      });   
+     
+     
+     $("#showextern").click(function(){
+        $("[href^='http']").each(function(index){
+          $(this).html( $(this).html()+"!");
+        });
+      });
+		
+	});
+</script>
+</head>
+<body>
+<p>
+<a href="http://www.ericdigests.org/" parental="xxx">ERIC Digests</a>
+<a href="http://scil.stanford.edu/" parental="+14" title="Conducts research on how to teach and how people learn. Includes list of study projects and events.">Stanford Center for Innovations in Learning</a>
+<a href="/pudding/howto.html" title="A complete crash course" parental="xxx">How to make pudding</a>
+<a href="http://www.emtech.net/learning_theories.htm" title="Links to learning theory sites.">Learning Theories</a>
+<a href="advertising/http/youtube">Advertising on Youtube</a>
+</p>
+
+<button id="hidexxx">Verberg alle links met parental "xxx"</button>
+<button id="showtitle">Zoek alle links met een title attribuut en plaats de title er tussen haakjes achter.</button>
+<button id="showextern">Plaats een uitroepteken achter alle externe links (beginnend met "http")</button>
+
+<p>
+	<input type="text" fakeplaceholder="focus me!"/>
+</p>
+</body>
+</html>
