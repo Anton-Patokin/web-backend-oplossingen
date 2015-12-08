@@ -10,7 +10,7 @@ $( document ).ready(function(){
            $inputLetters = getFull();
 
            $.getJSON( "https://en.wikipedia.org/w/api.php?action=opensearch&search="+$inputLetters+"&callback=?&limit=3", function( data ) {
-              //console.log(data);
+              console.log(data);
             
             
             $("#results").empty();
