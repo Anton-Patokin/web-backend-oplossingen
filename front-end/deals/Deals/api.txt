@@ -1,0 +1,4 @@
+
+Bruxx deals: http://www.kimonolabs.com/api/4myag81u?apikey=83c8e29fb0850d58c97e6fe06bf34dc8
+
+Openweathermap: http://openweathermap.org/API

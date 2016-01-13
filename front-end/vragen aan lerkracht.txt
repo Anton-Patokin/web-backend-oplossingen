@@ -1,0 +1,8 @@
+wat is verschiel tussen    let vs var
+
+
+
+code style  // begrijp niet wat ze er me bedoelen 
+
+Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit 
+hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.

@@ -47,10 +47,10 @@
      
         $("#makedivs").click(function(){
           for(var i = 0; i<12; i++){
-            $("#container").append("<div class='image' foto='"+(i+1)+"'>"+i+"</div>");
+            $("#container").append("<div class='image' brr='"+(i+1)+"'>"+i+"</div>");
             $(".image:eq("+i+")").css('background-image', 'url( images/small/'+(i+1)+'.jpg)');
           }
-         $("#container").lightbox();
+         $("#container").lightbox({elem:"div",elem1:"brr"});
         })
         
         $("#hideeven").click(function(){
