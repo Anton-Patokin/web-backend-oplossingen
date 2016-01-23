@@ -33,13 +33,13 @@ function __autoload($class) {
 </head>
 <body>
 <?php if($bodschap){echo $bodschap;}?>
-     <form action="artikel-zoeken-redirect.php" method="get">
+     <form action="http://oplossingen.web-backend.local/4.8%20mod_rewrite_singel_point_of_entre/artikel-zoeken-redirect.php" method="get">
          <label for="query-content">Zoeken in artikels:</label>
          <input type="text" name="artikel" >
          <input type="submit" value="submit" name="submit">
      </form>
                         
-     <form action="artikel-zoeken-redirect.php" method="get">
+     <form action="http://oplossingen.web-backend.local/4.8%20mod_rewrite_singel_point_of_entre/artikel-zoeken-redirect.php" method="get">
          <label for="query-date">Zoeken op datum:</label>
          <select name="date" >
                                 

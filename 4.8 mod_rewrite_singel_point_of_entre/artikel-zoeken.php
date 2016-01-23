@@ -1,4 +1,5 @@
 <?php
+include('include-config.php');
 session_start();
 function __autoload($class) {
         include 'class/' . $class . '.php';
@@ -40,13 +41,13 @@ try{
 </head>
 <body>
 
-<form action="artikel-zoeken-redirect.php" method="get">
+<form action="<?=URL_ROOT ?>artikel-zoeken-redirect.php" method="get">
          <label for="query-content">Zoeken in artikels:</label>
          <input type="text" name="artikel" >
          <input type="submit" value="submit" >
      </form>
                         
-     <form action="artikel-zoeken-redirect.php" method="get">
+     <form action="<?=URL_ROOT ?>artikel-zoeken-redirect.php" method="get">
          <label for="query-date">Zoeken op datum:</label>
          <select name="date" >
                                 
