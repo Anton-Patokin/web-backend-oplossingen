@@ -1,0 +1,5 @@
+
+Deals: jsonDeals.js
+
+Openweathermap: http://openweathermap.org/API
+Key: 9fcb9187562ae4861f86320b73d471f0

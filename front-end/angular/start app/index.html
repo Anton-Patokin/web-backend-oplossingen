@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="base">
+<head>
+<title>Page Title</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+
+    <div ng-controller="StoreController as store">
+        <h1>{{store.product.name}}</h1>
+        <h2>{{store.product.price}}</h2>
+        <p>{{store.product.description}}</p>
+        <button ng-show="store.product.canPurchase">add to the car</button>
+    </div>
+<p>{{4+6}}</p>
+
+</body>
+</html>

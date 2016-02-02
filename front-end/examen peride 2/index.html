@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat now</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+
+
+    <h1>Chat now!</h1>
+    
+        <section id="section_login">
+            <div class="formstep formstep_shorttext">
+                <input type="text" name="chat_name" id="chat_name" placeholder="Name" value=""/>
+            </div>
+     
+            <div class="formstep formstep_shorttext half">
+                <input type="text" name="chat_room" id="chat_room" placeholder="Chatroom" value=""/>
+            </div>
+    
+            <div class="formstep formstep_submit half">
+                <a type="submit" name="join" id="join">Join room</a>
+            </div> 
+            
+        </section>
+    
+        <section id="section_loggedin">You are now chatting as <span id="active_name">NAME</span> in chatroom <span id="active_room">ROOM</span>. <a>(aanpassen)</a></div>    
+        </section>
+    
+        <section id="section_message">
+
+            <div class="formstep formstep_longtext">
+                <label for="chat_message">Message<input type="text" name="chat_message" id="chat_message" value=""></label>
+            </div>
+            
+        </section>
+
+
+        <section id="section_conversation">
+
+            <p><span>Alex</span>
+                Dag Jurgen!
+            </p>        
+
+            <p><span>Jurgen</span>
+                Hallo, ik ben Jurgen.
+            </p>
+
+
+        </section>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Labo 3</title>
+<style>
+	body {
+		background-color: #eeeeee;
+	}
+	.image {
+		width: 300px;
+		height: 200px;
+		border: 5px solid white;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin: 10px;
+		cursor: pointer;
+	}
+	#lightbox {
+		display: none;
+		width: 600px;
+		height: 400px;
+		border: 5px solid black;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -300px;
+		margin-top: -200px;
+		background-color:white;
+		background-position: center center;
+		background-repeat: no-repeat;
+		cursor: pointer;	
+	}
+	.hoofding {
+		border:10px solid black;
+	}
+	.inlijn {
+		float: left;
+	}
+
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="plugIn.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+<script>
+	$(function(){
+
+
+		
+		
+	});
+</script>
+</head>
+<body>
+
+<button id="makedivs">Maak 12 divs aan in "#container" met class "image" en geef ze elk een background-image</button>
+<button id="hideeven">Verberg alle even divs</button>
+<button id="showhidden">Fade alle verborgen divs naar 0.5</button>
+<button id="boldfirst">Geef de eerste div een dikke border</button>
+<button id="floatall">Maak alle divs behalve de eerste float:left;</button>
+
+<div id="container">
+
+</div>
+<div id="lightbox">
+	
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script language="JavaScript">
+			<!-- 
+				
+				$(document).ready(function(){
+                    console.log("ready");
+               
+                
+                $.ajax({
+                          method: "GET",
+                          url: "klaslijst.js",
+                          dataType: "json",
+                          success: function(data) {
+                                                       
+                              //console.log(data);
+                              
+                              $.each(data, function(key,val){
+                                  console.log(val);
+                              })                            
+                          }  
+                        });
+                
+                       
+                
+                
+               
+                var DEALS = (function(my,$){
+                    
+                    function addGroep(item){
+                        $('#klasgroep').append($("<\option>").addClass("option").val(item).html(item));
+                    }
+                    function addLeerlingen(item){
+                        $('#leerlingen').append($("<\option>").addClass("option").val(item).html(item));
+                    }
+                    
+                     $.ajax({
+                          method: "GET",
+                          url: "klaslijst.js",
+                          dataType: "json",
+                          success: function(data) {
+                                                       
+                              //console.log(data);
+                              
+                              $.each(data, function(key,val){
+                                   addGroep(key);
+                              })
+                              
+                             $("#klasgroep").change(function(){
+                                var classgorep =  $( "#klasgroep option:selected").attr("value");
+                                 //console.log(classgorep);
+                                 $("#leerlingen").empty();
+                                 $.each(data[classgorep], function(key,val){
+                                     
+                                    addLeerlingen(val);
+                                 })
+                                 
+                                 
+                             });
+                          }
+                         
+                        });
+                    
+                    return my;           
+                }(DEALS || [],jQuery))
+                
+                 
+					
+					// haal het jsonobject op uit klaslijst.js en voer de callbackfunctie uit
+
+						// de ontvangen data is onmiddelijk toegankelijk als object (json)
+						// loop door het object: deze bestaat in eerste dimensie uit de klasgroepen
+
+							// maak per klasgroep een option aan in de eerste select
+
+						
+						// koppel een change-event-listener aan de select:
+						// wanneer de waarde van de select verandert, voer dan de functie selectGroep uit.
+						// trigger een change event om de functie al eens uit te voeren
+						// (trigger doet alsof de select veranderd is, zonder dat dat het geval is)
+
+						
+					
+					// wordt uitgevoerd als de eerste select verandert (of zo'n trigger krijgt)
+						
+						// vraag de huidige waarde van de select op (klasgroep)
+						
+						// maak de tweede select leeg
+											
+						// loop door het klasgroepobject (tweede dimensie van het json-object)
+							
+							// maak een option aan
+							// geef de option de juiste value (de key leerling), value is een attribuut van de option
+							// en vul de juiste tekst in (opvragen met behulp van de key leerling)
+							
+							// voeg de net aangemaakte option toe aan de tweede select
+							
+						
+						// koppel een change-event-listener aan de select (de functie selectLeerling)
+						// en trigger direct een eerste change om de functie uit te voeren
+						
+					
+					// wordt uitgevoerd als de tweede select verandert (of zo'n trigger krijgt)
+						
+						// vraag de huidige waarde van de select op (leerlingId)
+
+						// vraag de tekst van de geselecteerde option op (leerlingnaam)
+						
+						// zoek de H1, geef als tekst de naam van de leerling mee
+						// zoek het volgende element (de H3), geef als tekst het leerlingID mee
+										
+				
+				});
+				
+		
+		 	//-->
+		 </script>
+		
+	</head>
+	<body>
+	
+		<select id="klasgroep"></select>
+		<select id="leerlingen"></select>	
+		
+		<h1></h1>
+		<h3></h3>
+	
+	</body>
+</html>

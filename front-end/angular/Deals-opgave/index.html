@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="deals">
+	<head>
+		<title>Last minutes</title>
+		<style>
+			html {
+				background-color: #eee;
+			}
+			body {
+				width: 600px;
+				margin: auto;
+				font-family: sans-serif;
+			}
+			ul,li{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			li {
+				float: left;
+				width: 80px;
+				height: 80px;
+				background-color: white;
+				display: block;
+				margin: 10px;
+				padding: 10px;
+				font-size: 12px;
+				cursor: pointer;
+			}
+			strong{
+				display: block;
+				margin-top:5px;
+			}
+			.price {
+				padding: 3px;
+				background-color: black;
+				color: white;
+				font-size: 14px;
+			}
+			.weather {
+				font-size: 10px;
+				margin-top: 2px;
+				float: right;
+			}
+		</style>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script src="jsonDeals.js"></script>
+        <script type="text/javascript" src="base.js"></script>
+        
+	</head>
+	<body ng-controller="DealsController as Deeal">
+		<ul >
+			<li ng-repeat="deal in Deeal.deals" ng-click="getCity()" >
+                
+				<span class="price">{{deal.Prijs | currency: "&euro;" : 0}}</span>
+				<strong>{{deal.Stad}}</strong>
+				{{deal.Land}}
+			</li>
+		</ul>
+	</body>
+</html>

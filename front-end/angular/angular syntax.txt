@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<HTML ng-app="base">
+	<HEAD>
+		<link></link>
+	</HEAD>
+	
+	<BODY>
+		<script src="angular.js"></script>
+		<script src="APP.js"></script>
+
+		<p>{{1+3}}  or {{"hallo"}}</p>
+	</BODY>
+</HTML>
+
+
+
+var app =angular.module("store",[]);

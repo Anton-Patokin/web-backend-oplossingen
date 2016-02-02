@@ -1,0 +1,129 @@
+body {
+    background: #000;
+
+    color: #ccc;
+    font-family: 'Dosis', sans-serif;
+    width: 470px;
+    padding: 55px 115px 580px 115px;
+    background: black no-repeat center bottom;
+    margin: auto;
+
+}
+
+label {
+    font-weight: bold;
+}
+
+
+h1 {
+    display:inline-block;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #ccc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover {
+    color: white;
+}
+
+.formstep {
+    width: 480px;
+    height: 50px;
+    margin-bottom: 0px;
+    clear: both;
+    font-weight: bold;
+    font-size: large;
+}
+.formstep_checkbox label, .formstep_radio label {
+    width: 140px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    font-size: large;
+    padding: 5px;
+    padding-top: 10px;
+    background-color: #333333;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.formstep_checkbox input, .formstep_radio input {
+    margin-right: 10px;
+
+}
+.formstep_shorttext label, .formstep_longtext label {
+    width: 150px;
+    margin-top: 5px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    font-size: large;
+    position: relative;
+    cursor: pointer;
+}
+.formstep_shorttext input, .formstep_longtext input {
+    width: 140px;
+    height: 30px;
+    font-size: large;
+    text-align: left;
+    margin-top:14px;
+    padding: 5px;
+    padding-top: 10px;
+    border: 0px solid black;
+    display: block;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.formstep_longtext input {
+    width:460px;
+}
+.formstep_submit a {
+    width: 140px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    font-size: large;
+    padding: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #333333;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.half {
+    width: 50%;
+    float: left;
+    clear: none;
+}
+section {
+    clear:both;
+    margin-bottom: 30px;
+}
+#section_login {
+    height: 100px;
+}
+#section_message {
+    height: 80px;
+}
+#section_conversation p {
+    border: 1px solid #333;
+}
+#section_conversation p span {
+    background-color: #333333;
+    margin-right: 5px;
+}

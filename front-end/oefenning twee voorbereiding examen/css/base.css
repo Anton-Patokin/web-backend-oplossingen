@@ -1,0 +1,60 @@
+/* SIMPLE RESET */
+body, html, div, img, label, p, h1, h2, h3, h4, h5, h6, ul, ol, li, form, a, td {  margin: 0; padding: 0; border: 0; outline: none; }
+h1, h2, h3, h4, h5, h6 {  font-size: 100%;  }  
+
+/* CUSTOM CSS */
+.axs, .any {
+	text-indent:-1000px;
+	overflow:hidden;
+	display:block;
+}
+.axs {
+	width:0px;
+	height:0px;
+}
+.hidden {
+	display:none;
+}
+
+/* OVERALL */
+
+body {
+	color:#333333;
+	font-size:15px;
+	font-family:sans-serif;
+	width: 600px;
+	margin: 10px auto;
+}
+
+p {
+	padding:8px 15px 10px 15px;	
+	font-size:15px;
+}
+input.full {
+	width:100%;
+	height:32px;
+	line-height:32px;
+	font-size:16px;
+	font-family:sans-serif;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin:auto;
+	padding:0px;
+	text-indent:5px;
+	border:1px solid #b2b2b2;
+}
+ul {
+	margin: 20px 0px;
+	list-style: none;	
+	background: white;
+}
+	li {
+		padding: 10px 0px;
+	}
+	li:nth-child(odd) {
+		background-color: #eeeeee;	
+	}
+		ul li img {
+			padding: 0 5px;	
+		}
